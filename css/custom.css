@@ -5786,7 +5786,7 @@ header.main-header .header-sticky.active{
     }
 
 	.section-title h1{
-        font-size: 34px;
+        font-size: 24px;
     }
 
 	.section-title h2{
@@ -6060,6 +6060,7 @@ header.main-header .header-sticky.active{
 
 	.footer-contact-circle img{
 		max-width: 100px;
+		display: none;
 	}
 
 	.footer-links{
