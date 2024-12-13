@@ -333,7 +333,7 @@ body{
 	right: 0;
 	bottom: 0;
 	z-index: 1000;
-	background-color: var(--accent-color);
+	background-color: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -543,8 +543,8 @@ body{
 
 .topbar-contact-info ul li p{
 	color: var(--primary-color);
-	font-size: 20px;
-	font-weight: 700;
+	font-size: 14px;
+	/* font-weight: 700; */
 	width: calc(100% - 60px);
 	margin: 0;
 }
@@ -640,7 +640,7 @@ header.main-header .header-sticky.active{
 
 .main-menu ul li .nav-link:hover,
 .main-menu ul li .nav-link:focus{
-	color: var(--accent-color);
+	color: #ff9900;
 }
 
 .main-menu ul ul{
@@ -917,7 +917,8 @@ header.main-header .header-sticky.active{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: linear-gradient(270deg, rgba(30, 30, 30, 0) 0.02%, rgba(30, 30, 30, 0.9) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0) 87.63%, rgba(30, 30, 30, 0.6) 100.45%);
+	/* background: linear-gradient(270deg, rgba(30, 30, 30, 0) 0.02%, rgba(30, 30, 30, 0.9) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0) 87.63%, rgba(30, 30, 30, 0.6) 100.45%); */
+	background: linear-gradient(270deg, rgba(223, 221, 230, 0) 0.02%, rgba(65, 65, 65, 0.9) 100%), linear-gradient(0deg, rgba(238, 230, 230, 0) 87.63%, rgba(242, 232, 232, 0.6) 100.45%);
 	width: 100%;
 	height: 100%;
 	z-index: 1;
@@ -2323,7 +2324,7 @@ header.main-header .header-sticky.active{
 
 .page-header{
 	position: relative;
-	background: url('../images/page-header-bg.jpg') no-repeat center center;
+	background: url('../images/Contact_Us_Banner_1920x780.png') no-repeat center center;
 	background-size: cover;
 	padding: 150px 0;
 }
@@ -2392,7 +2393,7 @@ header.main-header .header-sticky.active{
 
 .mission-vision-bg{
 	position: relative;
-	background: url('../images/our-service-bg.jpg');
+	background: url('../images/banner1.webp');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -2466,7 +2467,7 @@ header.main-header .header-sticky.active{
 .mission-vision-nav ul li .nav-link.active,
 .mission-vision-nav ul li .nav-link:hover{
     background: #fac89c;
-    color: var(--white-color);
+    color:#003366;
 	border-radius: 0;
 }
 
@@ -2595,8 +2596,8 @@ header.main-header .header-sticky.active{
 
 .our-history-nav ul li .nav-link.active,
 .our-history-nav ul li .nav-link:hover{
-    background: var(--accent-color);
-    color: var(--white-color);
+    background: #f9c79d;
+    color: #003366;
 	border-radius: 0;
 }
 
@@ -4470,7 +4471,7 @@ header.main-header .header-sticky.active{
 
 .page-contact-us{
     padding: 100px 0;
-	background: url(../images/about-us-bg.svg) no-repeat;
+	background: url() no-repeat;
     background-position: bottom left;
     background-size: auto;
 }
@@ -5747,6 +5748,7 @@ header.main-header .header-sticky.active{
 
 	.topbar{
         padding: 10px 0;
+		display: none;
     }
 
 	.topbar-contact-info ul{
@@ -5759,16 +5761,21 @@ header.main-header .header-sticky.active{
         width: 30px;
         height: 30px;
         margin-right: 10px;
+		display: none;
     }
 
 	.topbar-contact-info li .icon-box img{
         max-width: 16px;
+		display: none;
     }
 
 	.topbar-contact-info ul li p{
         font-size: 14px;
         width: calc(100% - 40px);
+		 display: none;
+		
 	}
+
 
 	.topbar-qoute-btn{
 		display: none;
@@ -6403,4 +6410,28 @@ header.main-header .header-sticky.active{
 	.google-map-iframe iframe{
         height: 350px;
     }
+}
+
+        /* Style for the WhatsApp button */
+        .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Official WhatsApp Green from Play Store */
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+    background-color: #0cef5f; /* Official darker green for hover effect */
+    cursor: pointer;
 }
