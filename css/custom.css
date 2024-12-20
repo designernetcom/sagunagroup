@@ -581,11 +581,30 @@ header.main-header .header-sticky.active{
 	border-bottom: 1px solid var(--dark-divider-color);
 }
 
-.navbar{
-	padding: 10px 0px;
-	align-items: center;
-	background: #333333;
+/* Default styles */
+.navbar {
+    padding: 10px 0px;
+    align-items: center;
+    background: #333333;
 }
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 5px 0px; /* Reduce padding for smaller screens */
+        flex-direction: column; /* Stack items vertically if necessary */
+		background: #333333;
+    }
+}
+
+/* Media query for extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px 10px; /* Adjust padding for extra small screens */
+        background: #fff; /* Optional: change background color */
+    }
+}
+
 
 .main-header .header-sticky.active-sticky-header.hide .navbar{
 	padding: 20px 0;
@@ -4690,7 +4709,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.navbar{
-		padding: 15px 0;
+		padding: 3px 0;
 	}
 
 	.main-header .navbar-brand{
@@ -6418,8 +6437,8 @@ header.main-header .header-sticky.active{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25d366; /* Official WhatsApp Green from Play Store */
-    color: white;
+   
+    
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -6427,12 +6446,12 @@ header.main-header .header-sticky.active{
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   
     z-index: 1000;
     text-decoration: none;
 }
 
 .whatsapp-btn:hover {
-    background-color: #0cef5f; /* Official darker green for hover effect */
+   
     cursor: pointer;
 }
